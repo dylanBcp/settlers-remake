@@ -20,6 +20,7 @@ package jsettlers.common.ai;
 public enum EPlayerType {
 	AI_VERY_EASY,
 	AI_EASY,
+	AI_MEDIUM,
 	AI_HARD,
 	AI_VERY_HARD,
 	HUMAN;
@@ -30,6 +31,7 @@ public enum EPlayerType {
 			HUMAN,
 			AI_VERY_HARD,
 			AI_HARD,
+			AI_MEDIUM,
 			AI_EASY,
 			AI_VERY_EASY
 	};
@@ -37,6 +39,7 @@ public enum EPlayerType {
 	public static final EPlayerType[] VALUES_AI_ONLY = new EPlayerType[] {
 			AI_VERY_HARD,
 			AI_HARD,
+			AI_MEDIUM,
 			AI_EASY,
 			AI_VERY_EASY
 	};

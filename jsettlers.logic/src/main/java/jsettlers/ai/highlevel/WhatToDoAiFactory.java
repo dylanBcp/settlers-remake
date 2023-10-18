@@ -42,6 +42,8 @@ class WhatToDoAiFactory {
 			return new BuildingListEconomyMinister(aiStatistics, player, 1F / 10F, 1F / 5F, true);
 		case AI_EASY:
 			return new BuildingListEconomyMinister(aiStatistics, player, 1F / 4F, 1F / 2F, false);
+		case AI_MEDIUM:
+				return new BuildingListEconomyMinister(aiStatistics, player, 1F / 3F, 3F / 5F, false);
 		case AI_HARD:
 			return new BuildingListEconomyMinister(aiStatistics, player, 1F / 2F, 3F / 4F, false);
 		default:

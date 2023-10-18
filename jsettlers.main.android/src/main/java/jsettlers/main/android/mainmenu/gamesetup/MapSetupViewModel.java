@@ -169,10 +169,11 @@ public abstract class MapSetupViewModel extends ViewModel implements PositionCha
 		playerSlotPresenter.setPossiblePlayerTypes(new PlayerType[] {
 				new PlayerType(EPlayerType.AI_VERY_HARD),
 				new PlayerType(EPlayerType.AI_HARD),
+				new PlayerType(EPlayerType.AI_MEDIUM),
 				new PlayerType(EPlayerType.AI_EASY),
 				new PlayerType(EPlayerType.AI_VERY_EASY)
 		});
-		playerSlotPresenter.setPlayerType(new PlayerType(EPlayerType.AI_VERY_HARD));
+		playerSlotPresenter.setPlayerType(new PlayerType(EPlayerType.AI_MEDIUM));
 	}
 
 	protected static void setHumanSlotPlayerTypes(PlayerSlotPresenter playerSlotPresenter) {
