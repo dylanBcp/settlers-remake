@@ -68,7 +68,7 @@ public abstract class MapPickerViewModel extends ViewModel {
 
 		private MapLoader[] sortedMaps(List<? extends MapLoader> items) {
 			return items.stream()
-					.sorted((o1, o2) -> o1.getMapName().compareToIgnoreCase(o2.getMapName()))
+					.sorted((o1, o2) -> o2.getCreationDate().compareTo(o1.getCreationDate()))
 					.toArray(MapLoader[]::new);
 		}
 	}
